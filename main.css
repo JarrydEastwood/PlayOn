@@ -1,0 +1,119 @@
+@font-face {
+  font-family: thinkMusic;
+  src: url(src/ThinkMusic.woff2);
+}
+
+body{
+  z-index: 1;
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.videoDisplay{
+  position: relative;
+  width: auto;
+  height: 80%;
+  margin: 0 auto;
+  display: block;
+  z-index: 2;
+}
+
+.buttonCont{
+  z-index: 6;
+  text-align:center
+}
+
+.purple{
+  color: #864FA0;
+}
+.orange{
+  color: #F47F52;
+}
+.green{
+  color: #76B966;
+}
+.yellow{
+  color: #FEC66A;
+}
+.pink{
+  color: #DE2F90;
+}
+.darkBlue{
+  color: #01519C;
+}
+.lightBlue{
+  color: #20B6C9;
+}
+
+.lightGrey{
+  color: #BCBCBC;
+}
+.medGrey{
+color: #59595B;
+}
+.darkGrey{
+  color: #3B3B3F;
+}
+
+.bgDarkGrey{
+  background-color: #3B3B3F;
+}
+
+.bgWhite{
+  background-color: #FFFFFF;
+}
+
+.title{
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+.secondaryTitle{
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+.accent{
+  font-family: "thinkMusic";
+  font-style: normal;
+  letter-spacing: .1rem;
+}
+
+.subtitle{
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+  .videoTile{
+    background-image: url("src/ACaffery1.webp");
+  }
+
+.tileImageCont{
+  filter: grayscale(100%);
+  background-color: pink;
+  width: 10vw;
+  height: 10vw;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.tileImage{
+  object-fit: cover;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.tileImageCont :hover{
+  filter: grayscale(0%);
+}
+.grayscale{
+  filter: grayscale(100%);
+}
