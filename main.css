@@ -132,3 +132,37 @@ color: #59595B;
 .grayscale{
   filter: grayscale(100%);
 }
+
+
+.content__container {
+    overflow: hidden;
+    height: 85px;
+}
+
+.content__container__list {
+    list-style: none;
+    animation-name: change;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
+}
+
+.content__container__list__item {
+    margin: 0;
+    line-height: 87px;
+}
+
+@keyframes change {
+    0%, 7.14%, 100% {transform:translate3d(0,0,0);}
+    14.28% {transform:translate3d(0,-14.28%,0);}
+    21.42% {transform:translate3d(0,-28.57%,0);}
+    28.57% {transform:translate3d(0,-42.85%,0);}
+    35.71% {transform:translate3d(0,-57.14%,0);}
+    42.85% {transform:translate3d(0,-71.42%,0);}
+    53.5% {transform:translate3d(0,-85.71%,0);}
+    64.28% {transform:translate3d(0,-71.42%,0);}
+    71.42% {transform:translate3d(0,-57.14%,0);}
+    78.54% {transform:translate3d(0,-42.85%,0);}
+    85.71% {transform:translate3d(0,-28.57%,0);}
+    92.85% {transform:translate3d(0,-14.28%,0);}
+}
