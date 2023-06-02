@@ -56,24 +56,16 @@ color: #59595B;
   color: #3B3B3F;
 }
 
+.bgPurple{
+  background: rgb(78,45,91);
+  background: linear-gradient(180deg, rgba(78,45,91,1) 0%, rgba(134,79,160,1) 75%, rgba(184,146,195,1) 100%);
+}
+
 .bgDarkGrey{
   background-color: #3B3B3F;
   background: linear-gradient(90deg, rgba(111,111,113,1) 0%, rgba(89,89,91,1) 35%, rgba(59,59,63,1) 100%);
-  background-size: 400% 400%;
-  animation: gradient 15s 5s ease-in infinite;
 }
 
-@keyframes gradient {
-0% {
-  background-position: 0% 50%;
-}
-50% {
-  background-position: 100% 50%;
-}
-100% {
-  background-position: 0% 50%;
-}
-}
 
 .bgWhite{
   background-color: #FFFFFF;
