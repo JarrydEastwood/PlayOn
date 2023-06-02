@@ -53,10 +53,11 @@
 .tl-timeline h4,
 .tl-timeline h5,
 .tl-timeline h6 {
-  color: #ff0000;
+  font-family: "trade-gothic-next", sans-serif;
   font-weight: 800;
   font-style: normal;
   letter-spacing: 1px;
+  color: #864FA0;
 }
 .tl-timeline h1,
 .tl-timeline h2,
@@ -84,6 +85,10 @@
   line-height: 15px;
 }
 .tl-timeline h2.tl-headline-title {
+  font-family: "trade-gothic-next", sans-serif !important;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: 1px;
   font-size: 38px;
   line-height: 38px;
 }
@@ -92,6 +97,10 @@
   margin-top: 5px;
   font-size: 24px;
   line-height: 24px;
+  font-family: "trade-gothic-next", sans-serif !important;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: 1px;
 }
 .tl-timeline h2 {
   margin-top: 20px;
@@ -108,23 +117,6 @@
   font-size: 24px;
 }
 .tl-timeline p a {
-  /*
-			color: lighten(@color-dark, 40%);
-			text-decoration: none;
-			background-image: -moz-linear-gradient(top, fade(lighten(@color-dark, 40%), 0%) 50%, fade(lighten(@color-dark, 40%), 60%) 50%);
-			background-image: -webkit-linear-gradient(top, fade(lighten(@color-dark, 40%), 0%) 50%, fade(lighten(@color-dark, 40%), 60%) 50%);
-			background-image: -o-linear-gradient(top, fade(lighten(@color-dark, 40%), 0%) 50%, fade(lighten(@color-dark, 40%), 60%) 50%);
-			background-image: linear-gradient(to bottom, fade(lighten(@color-dark, 40%), 0%) 50%, fade(lighten(@color-dark, 40%), 60%) 50%);
-			background-repeat: repeat-x;
-			background-size: 2px 2px;
-			background-position: 0 @base-font-size+2;
-			text-shadow: -2px -1px 0 white, 2px -1px 0 white, -2px 1px 0 white, 2px 1px 0 white;
-			&:hover,
-			&:focus {
-				color:@color-theme;
-				text-decoration: none;
-			}
-			*/
   color: #666666;
   text-decoration: underline;
 }
@@ -183,7 +175,7 @@
 .tl-timeline blockquote,
 .tl-timeline blockquote p {
   font-family: "trade-gothic-next", sans-serif;
-  color: #999999;
+  color: #4800ff;
   font-size: 24px;
   line-height: 24px;
   text-align: left;
