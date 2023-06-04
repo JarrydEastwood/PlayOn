@@ -186,7 +186,6 @@ color: #59595B;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  z-index: 1;
 }
 .profileName{
   font-family: "trade-gothic-next", sans-serif;
@@ -198,47 +197,45 @@ color: #59595B;
 }
 
 .profilePic{
-  width: 800px;
-  height: auto;
+  width: auto;
+  height: 70vh;
+  bottom: 0;
+  position: absolute;
+  object-fit: cover;
+  right:25%;
+  left:50%;
+  margin-left:-30vh;
+  filter: grayscale(100%);
+}
+
+.profilePicWide{
+  width: auto;
+  height: 80vh;
   bottom: 0;
   position: absolute;
   z-index: 1;
   object-fit: cover;
   right:25%;
   left:50%;
-  margin-left:-400px;
+  margin-left:-40vh;
+  filter: grayscale(100%);
 }
 
-.profilePicAlt{
-  width: 500px;
-  height: auto;
-  bottom: 0;
-  position: absolute;
-  z-index: 1;
-  object-fit: cover;
-  right:25%;
-  left:50%;
-  margin-left:-250px;
+.btnProfileLearn{
+ border: #FFFFFF;
+ border-radius: 15px;
+ border-style: solid;
+ border-width: 2px;
+ color: #FFFFFF;
+ padding: 16px 32px;
+ text-align: center;
+ text-decoration: none;
+ cursor: pointer;
+ transition-duration: 0.4s;
 }
 
-
-.slide1{
-
-}
-
-.slide2{
-
-}
- 
-.slide3{
-
-}
- 
-.slide4{
-
-}
- 
-.slide5{
-
+.btnProfileLearn:hover:focus:active{
+  background-color: white;
+  color: #864FA0;
 }
  
