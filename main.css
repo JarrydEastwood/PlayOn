@@ -198,28 +198,170 @@ color: #59595B;
 
 .profilePic{
   width: auto;
-  height: 70vh;
+  height: 100vw;
   bottom: 0;
   position: absolute;
   object-fit: cover;
   right:25%;
   left:50%;
-  margin-left:-30vh;
+  margin-left:-50vw;
   filter: grayscale(100%);
 }
 
 .profilePicWide{
   width: auto;
-  height: 80vh;
+  height: 95vw;
   bottom: 0;
   position: absolute;
   z-index: 1;
   object-fit: cover;
   right:25%;
   left:50%;
-  margin-left:-40vh;
+  margin-left:-47.5vw;
   filter: grayscale(100%);
 }
+
+
+@media (min-width: 750px) {
+  .profilePic{
+    height: 78vh;
+    margin-left:-39vh;
+
+  }
+  
+  .profilePicWide{
+    height: 85vh;
+    margin-left:-37.5vh;
+
+  }
+}
+
+.hiderRight {
+  position: absolute;
+  right: 50px;
+  top: 0%;
+  transform: translate3d(0,0,0);
+  overflow: hidden;
+  height: 50vh;
+  width: 400px;
+}
+.hiderLeft {
+  position: absolute;
+  left: 50px;
+  top: 0%;
+  transform: translate3d(0,0,0);
+  overflow: hidden;
+  height: 50vh;
+  width: 400px;
+}
+
+@keyframes slide-left { 
+  0%{ transform: translate3d(-800%, 0, 0);}
+  25%{ transform: translate3d(0%, 0, 0);}
+  100%{ transform: translate3d(0%, 0, 0);}
+}
+
+@keyframes slide-right { 
+  0%{ transform: translate3d(-800%, 0, 0);}
+  25%{ transform: translate3d(100%, 0, 0);}
+  100%{ transform: translate3d(100%, 0, 0);}
+}
+@keyframes slide-rightWoops { 
+  0%{ transform: translate3d(-800%, 0, 0);}
+  19%{ transform: translate3d(120%, 0, 0);}
+  20%{ transform: translate3d(80%, 0, 0);}
+  25%{ transform: translate3d(100%, 0, 0);}
+  100%{ transform: translate3d(100%, 0, 0);}
+}
+
+@keyframes fadeOut{
+  0%{opacity: 1;}
+  100%{opacity: 0;}
+}
+@keyframes fadeIn{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+
+.animateTest #arrowLeft{
+  animation: slide-left 4s forwards;
+  /* animation-delay: 0.5s; */
+  transform: translate3d(-800%, 0, 0);
+  opacity: 1;
+}
+
+.animateTest #arrowRight{
+  transform: translate3d(-800%, 0, 0);
+  opacity: 1;
+  animation: slide-right 4s forwards;
+}
+.animateTest #dashRight{
+  transform: translate3d(-800%, 0, 0);
+  animation: slide-right 12s, fadeOut 1s forwards ;
+  animation-delay: 0s, 8s;
+  opacity: 1;
+}
+.animateTest #dashMiddle{
+  transform: translate3d(-800%, 0, 0);
+  animation: slide-right 12s, fadeOut 1s forwards  ;
+  animation-delay: 1s, 8s;
+}
+.animateTest #dashLeft{
+  transform: translate3d(-800%, 0, 0);
+  animation: slide-rightWoops 12s, fadeOut 1s forwards  ;
+  animation-delay: 2s, 8s;
+}
+.animateTest #circle{
+  transform: translate3d(-800%, 0, 0);
+  animation: slide-right 12s, fadeOut 1s forwards  ;
+  animation-delay: 2.5s, 8s;
+}
+
+.animateWide{
+  width: 50px;
+  height: auto;
+}
+.animateSquare{
+  width: 50px;
+  height: auto;
+}
+
+#arrowRight{  
+  bottom: 100px;
+  right: 50px;
+  position: absolute;
+}
+
+#arrowLeft{
+  bottom: 100px;
+  left: 50px;
+  rotate: 180deg;
+  position: absolute;
+}
+
+#dashRight{  
+  bottom: 125px;
+  right: 100px;
+  position: absolute;
+}
+#dashMiddle{  
+  bottom: 125px;
+  right: 160px;
+  position: absolute;
+}
+#dashLeft{  
+  bottom: 125px;
+  right: 220px;
+  position: absolute;
+}
+
+#circle{  
+  bottom: 107px;
+  right: 280px;
+  position: absolute;
+}
+
 
 .btnProfileLearn{
  border: #FFFFFF;
