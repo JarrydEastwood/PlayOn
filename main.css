@@ -364,6 +364,7 @@ color: #59595B;
 
 
 .btnProfileLearn{
+  position: relative;
  border: #FFFFFF;
  border-radius: 15px;
  border-style: solid;
