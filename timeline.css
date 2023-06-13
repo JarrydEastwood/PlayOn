@@ -43,7 +43,7 @@
 	Snippets of reusable CSS to develop faster and keep code readable
  * ----------------------------------------------------------------- */
 .tl-timeline {
-  font-family: "trade-gothic-next", sans-serif;
+  font-family: "trade-gothic-next", sans-serif !important;
   /* VCard
 	================================================== */
 }
@@ -53,7 +53,7 @@
 .tl-timeline h4,
 .tl-timeline h5,
 .tl-timeline h6 {
-  font-family: "trade-gothic-next", sans-serif;
+  font-family: "trade-gothic-next", sans-serif !important;
   font-weight: 800;
   font-style: normal;
   letter-spacing: 1px;
@@ -85,7 +85,7 @@
   line-height: 15px;
 }
 .tl-timeline h2.tl-headline-title {
-  font-family: "trade-gothic-next", sans-serif !important;
+  font-family: "trade-gothic-next", sans-serif !important !important;
   font-weight: 800;
   font-style: normal;
   letter-spacing: 1px;
@@ -97,7 +97,7 @@
   margin-top: 5px;
   font-size: 24px;
   line-height: 24px;
-  font-family: "trade-gothic-next", sans-serif !important;
+  font-family: "trade-gothic-next", sans-serif !important !important;
   font-weight: 800;
   font-style: normal;
   letter-spacing: 1px;
@@ -174,7 +174,7 @@
 }
 .tl-timeline blockquote,
 .tl-timeline blockquote p {
-  font-family: "trade-gothic-next", sans-serif;
+  font-family: "trade-gothic-next", sans-serif !important;
   color: #4800ff;
   font-size: 24px;
   line-height: 24px;
@@ -185,7 +185,7 @@
 }
 .tl-timeline blockquote cite,
 .tl-timeline blockquote p cite {
-  font-family: "trade-gothic-next", sans-serif;
+  font-family: "trade-gothic-next", sans-serif !important;
   font-size: 11px;
   color: #666666;
   display: block;
@@ -219,7 +219,7 @@
   margin: 0;
 }
 .tl-timeline .vcard {
-  font-family: "trade-gothic-next", sans-serif;
+  font-family: "trade-gothic-next", sans-serif !important;
   font-size: 15px;
   line-height: 15px;
   margin-bottom: 15px;
@@ -299,7 +299,7 @@
 }
 .tl-timeline .tl-note {
   display: block;
-  font-family: "trade-gothic-next", sans-serif;
+  font-family: "trade-gothic-next", sans-serif !important;
   font-style: italic;
   background-color: #fcf8e3;
   font-size: 15px;
@@ -2495,7 +2495,7 @@
 }
 .tl-text .tl-headline-date,
 .tl-text h3.tl-headline-date {
-  font-family: "trade-gothic-next", sans-serif;
+  font-family: "trade-gothic-next", sans-serif !important;
   font-size: 15px;
   line-height: 15px;
   font-weight: normal;
@@ -2511,7 +2511,7 @@
 }
 .tl-text .tl-text-date {
   display: inline-block;
-  font-family: "trade-gothic-next", sans-serif;
+  font-family: "trade-gothic-next", sans-serif !important;
   font-weight: normal;
   margin-top: 10px;
   font-size: 12px;
@@ -2891,7 +2891,7 @@
   left: 0px;
   font-size: 10px;
   line-height: 10px;
-  font-family: "trade-gothic-next", sans-serif;
+  font-family: "trade-gothic-next", sans-serif !important;
   background-color: rgba(255, 255, 255, 0.85);
   padding: 3px;
 }
