@@ -70,11 +70,11 @@
 .tl-timeline h4,
 .tl-timeline h5,
 .tl-timeline h6 {
-  font-family: "TradeGothicNextLTPro-Lt" !important;
+  font-family: "thinkMusic" !important; 
   font-style: normal;
   letter-spacing: 1px;
-  color: #864FA0;
 }
+
 .tl-timeline h1,
 .tl-timeline h2,
 .tl-timeline h3 {
@@ -101,18 +101,19 @@
   line-height: 15px;
 }
 .tl-timeline h2.tl-headline-title {
-  font-family: "thinkMusic" !important;
+  font-family: "trade-gothic-next-heavy", sans-serif !important;
   font-style: normal;
   letter-spacing: 1px;
-  font-size: 1.5rem !important;
-  line-height: 2rem !important;
+  font-size: 2.5rem !important;
+  line-height: 3rem !important;
+  color: #FEC66A;
 }
 .tl-timeline h2.tl-headline-title small {
   display: block;
   margin-top: 5px;
-  font-size: 24px;
-  line-height: 24px;
-  font-family: "trade-gothic-next-heavy", sans-serif !important;
+  font-size: 2rem !important;
+  line-height: 2rem !important;
+  font-family: "thinkMusic" !important; 
   font-style: normal;
   letter-spacing: 1px;
 }
@@ -1755,7 +1756,7 @@
   min-width: 50%;
   float: left;
   /* Jarryd Change - This below is margin to push icon off top, i don't know why it won't work with margin-top... */
-  margin: 10%;
+  inset-block: 10%;
 }
 .tl-slide .tl-slide-content-container .tl-slide-content .tl-text {
   direction: ltr;
@@ -2078,7 +2079,7 @@
 .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-description,
 .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-description {
   text-shadow: 1px 1px 1px #FFF;
-  color: #333;
+  color: #FEC66A;
 }
 .tl-slidenav-previous .tl-slidenav-content-container.tl-slidenav-inverted .tl-slidenav-icon,
 .tl-slidenav-next .tl-slidenav-content-container.tl-slidenav-inverted .tl-slidenav-icon,
@@ -2286,9 +2287,12 @@
 .tl-storyslider object,
 .tl-storyslider video,
 .tl-storyslider iframe {
+  height: fit-content;
   max-width: 100%;
   position: relative;
+  margin: auto;
 }
+
 .tl-storyslider .tl-slider-background {
   position: absolute;
   top: 0;
@@ -2500,7 +2504,7 @@
 }
 .tl-text h2.tl-headline-title,
 .tl-text h2.tl-headline {
-  margin-top: 0;
+  margin-top: 1rem;
 }
 .tl-text .tl-headline-date,
 .tl-text h3.tl-headline-date {
