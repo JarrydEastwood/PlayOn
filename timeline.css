@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "thinkMusic";
+  src: url(src/ThinkMusic.woff2);
+}
+@font-face {
+  font-family: "trade-gothic-next-heavy";
+  src: url(src/TGN_Heavy.otf);
+}
+@import url("https://use.typekit.net/ciu0xnf.css");
+
+@font-face {font-family: "TradeGothicNextLTPro-Lt"; src: url("https://use.typekit.net/ciu0xnf.css");
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 300;
+  font-style: normal;  
+}
+
+
 /*!
 	Timeline JS 3 
 	
@@ -43,7 +60,7 @@
 	Snippets of reusable CSS to develop faster and keep code readable
  * ----------------------------------------------------------------- */
 .tl-timeline {
-  font-family: "trade-gothic-next", sans-serif !important;
+  font-family: "TradeGothicNextLTPro-Lt" !important;
   /* VCard
 	================================================== */
 }
@@ -53,8 +70,7 @@
 .tl-timeline h4,
 .tl-timeline h5,
 .tl-timeline h6 {
-  font-family: "trade-gothic-next", sans-serif !important;
-  font-weight: 800;
+  font-family: "TradeGothicNextLTPro-Lt" !important;
   font-style: normal;
   letter-spacing: 1px;
   color: #864FA0;
@@ -85,20 +101,18 @@
   line-height: 15px;
 }
 .tl-timeline h2.tl-headline-title {
-  font-family: "trade-gothic-next", sans-serif !important !important;
-  font-weight: 800;
+  font-family: "thinkMusic" !important;
   font-style: normal;
   letter-spacing: 1px;
-  font-size: 38px;
-  line-height: 38px;
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
 }
 .tl-timeline h2.tl-headline-title small {
   display: block;
   margin-top: 5px;
   font-size: 24px;
   line-height: 24px;
-  font-family: "trade-gothic-next", sans-serif !important !important;
-  font-weight: 800;
+  font-family: "trade-gothic-next-heavy", sans-serif !important;
   font-style: normal;
   letter-spacing: 1px;
 }
@@ -174,7 +188,7 @@
 }
 .tl-timeline blockquote,
 .tl-timeline blockquote p {
-  font-family: "trade-gothic-next", sans-serif !important;
+  font-family: "TradeGothicNextLTPro-Lt", sans-serif !important;
   color: #4800ff;
   font-size: 24px;
   line-height: 24px;
@@ -185,7 +199,7 @@
 }
 .tl-timeline blockquote cite,
 .tl-timeline blockquote p cite {
-  font-family: "trade-gothic-next", sans-serif !important;
+  font-family: "TradeGothicNextLTPro-Lt", sans-serif !important;
   font-size: 11px;
   color: #666666;
   display: block;
@@ -219,7 +233,7 @@
   margin: 0;
 }
 .tl-timeline .vcard {
-  font-family: "trade-gothic-next", sans-serif !important;
+  font-family: "TradeGothicNextLTPro-Lt", sans-serif !important;
   font-size: 15px;
   line-height: 15px;
   margin-bottom: 15px;
@@ -293,13 +307,13 @@
 .tl-timeline .tl-button-calltoaction .tl-button-calltoaction-text {
   display: inline-block;
   background-color: #c34528;
-  color: #fff;
+  color: #3B3B3F;
   padding: 10px 15px 10px 15px;
   border-radius: 7px;
 }
 .tl-timeline .tl-note {
   display: block;
-  font-family: "trade-gothic-next", sans-serif !important;
+  font-family: "TradeGothicNextLTPro-Lt", sans-serif !important;
   font-style: italic;
   background-color: #fcf8e3;
   font-size: 15px;
@@ -335,8 +349,8 @@
 ================================================== */
 @font-face {
   font-family: 'tl-icons';
-  src: url(../js/../css/icons/tl-icons.eot);
-  src: url(../js/../css/icons/tl-icons.eot?#iefix) format('embedded-opentype'), url(../js/../css/icons/tl-icons.ttf) format('truetype'), url(../js/../css/icons/tl-icons.woff2) format('woff2'), url(../js/../css/icons/tl-icons.woff) format('woff'), url(../js/../css/icons/tl-icons.svg#tl-icons) format('svg');
+  src: url(./src/icons/tl-icons.eot);
+  src: url(./src/icons/tl-icons.eot?#iefix) format('embedded-opentype'), url(./src/icons/tl-icons.ttf) format('truetype'), url(./src/icons/tl-icons.woff2) format('woff2'), url(./src/icons/tl-icons.woff) format('woff'), url(./src/icons/tl-icons.svg#tl-icons) format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -593,7 +607,7 @@
 */
 @keyframes invertToBlack {
   from {
-    background-color: #FFF;
+    background-color: #3B3B3F;
   }
   to {
     background-color: #000;
@@ -612,7 +626,7 @@
     background-color: #000;
   }
   to {
-    background-color: #FFF;
+    background-color: #3B3B3F;
   }
 }
 @-webkit-keyframes invertToWhite {
@@ -634,7 +648,7 @@
   padding: 5px 10px 5px 10px;
   display: inline-block;
   display: block;
-  color: #bfbfbf;
+ color: #3B3B3F;
 }
 .tl-menubar-button:disabled {
   opacity: 0.33;
@@ -643,11 +657,11 @@
 .tl-menubar-button:hover,
 .tl-menubar-button:focus-visible {
   background: #333;
-  color: #FFF;
+  color: #3B3B3F;
 }
 .tl-menubar-button:hover:disabled,
 .tl-menubar-button:focus-visible:disabled {
-  color: #bfbfbf;
+ color: #3B3B3F;
   background-color: rgba(242, 242, 242, 0.9);
 }
 .tl-mobile .tl-menubar-button {
@@ -655,15 +669,15 @@
 }
 .tl-mobile .tl-menubar-button:hover {
   background-color: rgba(242, 242, 242, 0.67);
-  color: #737373;
+  color:  #3B3B3F;
 }
 .tl-mobile .tl-menubar-button:active {
   background: #c34528;
-  color: #FFF;
+  color: #3B3B3F;
 }
 @keyframes invertToBlack {
   from {
-    background-color: #FFF;
+    background-color: #3B3B3F;
   }
   to {
     background-color: #000;
@@ -682,7 +696,7 @@
     background-color: #000;
   }
   to {
-    background-color: #FFF;
+    background-color: #3B3B3F;
   }
 }
 @-webkit-keyframes invertToWhite {
@@ -782,12 +796,11 @@
   text-shadow: none;
   color: #666;
   text-transform: none;
-  font-weight: normal;
 }
 .tl-message-full .tl-message-container .tl-message-content .tl-button {
   display: inline-block;
   cursor: pointer;
-  background-color: #FFF;
+  background-color: #3B3B3F;
   color: #333;
   padding: 10px;
   margin-top: 10px;
@@ -819,7 +832,6 @@
   font-family: 'tl-icons';
   speak: none;
   font-style: normal;
-  font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
@@ -950,7 +962,7 @@
   margin: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(229, 229, 229, 0.15);
+  background-color: rgba(255, 255, 255, 0.15);
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
   -webkit-transition: height 500ms cubic-bezier(0.77, 0, 0.175, 1), width 1000ms cubic-bezier(0.77, 0, 0.175, 1);
@@ -966,7 +978,7 @@
   display: none;
   position: absolute;
   width: 100%;
-  background-color: #e5e5e5;
+  background-color: #3B3B3F;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   height: 100px;
@@ -1018,7 +1030,7 @@
 }
 .tl-timemarker .tl-timemarker-content-container {
   position: absolute;
-  background-color: #e5e5e5;
+  background-color: #3B3B3F;
   border: 0;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -1070,9 +1082,8 @@
   line-height: 12px;
   height: 100%;
   overflow: hidden;
-  font-weight: normal;
   margin: 0;
-  color: #bfbfbf;
+  color: #FFF;
   position: relative;
 }
 .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline.tl-headline-fadeout:after,
@@ -1121,7 +1132,7 @@
 .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container [class*=" tl-icon-"] {
   display: block;
   font-size: 24px;
-  color: #bfbfbf;
+  color: #FFF;
   margin-top: 0px;
 }
 .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container .tl-icon-wikipedia {
@@ -1158,7 +1169,7 @@
 }
 .tl-timemarker:hover .tl-timemarker-content-container,
 .tl-timemarker:focus .tl-timemarker-content-container {
-  background-color: #737373;
+  background-color:  #3B3B3F;
   border-color: #a6a6a6;
   -webkit-transition: height 250ms cubic-bezier(0.77, 0, 0.175, 1), width 250ms cubic-bezier(0.77, 0, 0.175, 1);
   -moz-transition: height 250ms cubic-bezier(0.77, 0, 0.175, 1), width 250ms cubic-bezier(0.77, 0, 0.175, 1);
@@ -1251,7 +1262,7 @@
   background-color: #333;
 }
 .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
-  background-color: #FFF;
+  background-color: #3B3B3F;
   color: #333;
   z-index: 9;
   border-color: rgba(51, 51, 51, 0.5);
@@ -1447,9 +1458,8 @@
   font-size: 10px;
   line-height: 10px;
   overflow: hidden;
-  font-weight: normal;
   margin: 0;
-  color: #FFF;
+  color: #3B3B3F;
   margin-left: 10px;
 }
 .tl-timeera .tl-timeera-content-container .tl-timeera-content .tl-timeera-text h2.tl-headline.tl-headline-fadeout:after {
@@ -1508,7 +1518,7 @@
   transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
 }
 .tl-timegroup .tl-timegroup-message {
-  color: #e0e0e0;
+  color: #3B3B3F;
   text-shadow: #FFF 0px 2px 2px;
   margin-left: 80px;
 }
@@ -1532,7 +1542,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #FFF;
+  background-color: #3B3B3F;
   border-top: 1px solid #e5e5e5;
   z-index: 2;
 }
@@ -1561,7 +1571,6 @@
   top: 0;
   left: 0;
   text-align: center;
-  font-weight: normal;
 }
 .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-major .tl-timeaxis-tick .tl-timeaxis-tick-text,
 .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor .tl-timeaxis-tick .tl-timeaxis-tick-text {
@@ -1574,7 +1583,7 @@
 .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor .tl-timeaxis-tick:before {
   content: "|";
   display: block;
-  color: #FFF;
+  color: #3B3B3F;
   width: 1px;
   overflow: hidden;
   border-left: 1px solid #bfbfbf;
@@ -1604,12 +1613,12 @@
 }
 .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-major {
   z-index: 1;
-  background-color: #FFF;
+  background-color: #3B3B3F;
 }
 .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-major .tl-timeaxis-tick {
   font-size: 12px;
   line-height: 14px;
-  color: #737373;
+  color:  #3B3B3F;
   width: 100px;
   margin-left: -50px;
 }
@@ -1623,7 +1632,7 @@
 .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor .tl-timeaxis-tick {
   font-size: 11px;
   line-height: 13px;
-  color: #bfbfbf;
+ color: #3B3B3F;
   width: 50px;
   margin-left: -25px;
 }
@@ -1638,7 +1647,7 @@
   font-size: 9px;
   line-height: 9px;
   margin-top: -2px;
-  color: #e6e6e6;
+  color: #3B3B3F;
 }
 .tl-timeaxis .tl-timeaxis-content-container .tl-timeaxis-minor .tl-timeaxis-tick:before {
   font-size: 9px;
@@ -1745,8 +1754,8 @@
   width: 100%;
   min-width: 50%;
   float: left;
-  margin-top: auto;
-  margin-bottom: auto;
+  /* Jarryd Change - This below is margin to push icon off top, i don't know why it won't work with margin-top... */
+  margin: 10%;
 }
 .tl-slide .tl-slide-content-container .tl-slide-content .tl-text {
   direction: ltr;
@@ -1797,7 +1806,7 @@
 ================================================== */
 .tl-slide.tl-full-image-background,
 .tl-slide.tl-full-color-background {
-  color: #FFF !important;
+  color: #3B3B3F !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 .tl-slide.tl-full-image-background p,
@@ -1814,7 +1823,7 @@
 .tl-slide.tl-full-color-background h5,
 .tl-slide.tl-full-image-background h6,
 .tl-slide.tl-full-color-background h6 {
-  color: #FFF !important;
+  color: #3B3B3F !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 .tl-slide.tl-full-image-background a,
@@ -1828,7 +1837,7 @@
 .tl-slide.tl-full-image-background blockquote p,
 .tl-slide.tl-full-color-background blockquote p {
   text-shadow: 1px 1px 1px #000;
-  color: #ffffff;
+  color: #3B3B3F !important;
 }
 .tl-slide.tl-full-image-background a:hover,
 .tl-slide.tl-full-color-background a:hover {
@@ -1839,28 +1848,28 @@
 .tl-slide.tl-full-color-background .tl-caption,
 .tl-slide.tl-full-image-background .tl-credit,
 .tl-slide.tl-full-color-background .tl-credit {
-  color: #FFF !important;
+  color: #3B3B3F !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 .tl-slide.tl-full-image-background .tl-media-twitter blockquote,
 .tl-slide.tl-full-color-background .tl-media-twitter blockquote,
 .tl-slide.tl-full-image-background .tl-media-blockquote blockquote,
 .tl-slide.tl-full-color-background .tl-media-blockquote blockquote {
-  color: #FFF !important;
+  color: #3B3B3F !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 .tl-slide.tl-full-image-background .tl-media-twitter blockquote p,
 .tl-slide.tl-full-color-background .tl-media-twitter blockquote p,
 .tl-slide.tl-full-image-background .tl-media-blockquote blockquote p,
 .tl-slide.tl-full-color-background .tl-media-blockquote blockquote p {
-  color: #FFF !important;
+  color: #3B3B3F !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 .tl-slide.tl-full-image-background .vcard a,
 .tl-slide.tl-full-color-background .vcard a,
 .tl-slide.tl-full-image-background .vcard .nickname,
 .tl-slide.tl-full-color-background .vcard .nickname {
-  color: #FFF !important;
+  color: #3B3B3F !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 /* Full Image Background
@@ -2077,7 +2086,7 @@
 .tl-slidenav-next .tl-slidenav-content-container.tl-slidenav-inverted .tl-slidenav-title,
 .tl-slidenav-previous .tl-slidenav-content-container.tl-slidenav-inverted .tl-slidenav-description,
 .tl-slidenav-next .tl-slidenav-content-container.tl-slidenav-inverted .tl-slidenav-description {
-  color: #f2f2f2;
+  color: #3B3B3F;
   text-shadow: 1px 1px 1px #333;
 }
 /* ICONS
@@ -2350,16 +2359,16 @@
   clear: both;
 }
 .tl-media .tl-media-content-container .tl-media-content .tl-media-loaderror p {
-  color: #f2f2f2;
+  color: #3B3B3F;
   text-align: center;
 }
 .tl-media .tl-media-content-container .tl-media-content .tl-media-loaderror p span {
-  color: #f2f2f2;
+  color: #3B3B3F;
 }
 .tl-media .tl-media-content-container .tl-media-content .tl-media-loaderror [class^="tl-icon-"],
 .tl-media .tl-media-content-container .tl-media-content .tl-media-loaderror [class*=" tl-icon-"] {
   font-size: 28px;
-  color: #f2f2f2;
+  color: #3B3B3F;
   text-align: center;
 }
 .tl-media .tl-media-content-container .tl-media-content img,
@@ -2389,7 +2398,7 @@
 .tl-slide.tl-full-image-background .vcard a,
 .tl-slide.tl-full-color-background .vcard a {
   text-shadow: 1px 1px 1px #000;
-  color: #ffffff;
+  color: #3B3B3F;
 }
 .tl-slide.tl-full-image-background a:hover,
 .tl-slide.tl-full-color-background a:hover {
@@ -2478,10 +2487,10 @@
   vertical-align: middle;
   text-align: left;
   text-shadow: none;
-  color: #737373;
+  color:  #3B3B3F;
 }
 .tl-text p {
-  color: #737373;
+  color:  #3B3B3F !important;
 }
 .tl-text .tl-text-content-container .tl-text-headline-container {
   display: flex;
@@ -2495,34 +2504,32 @@
 }
 .tl-text .tl-headline-date,
 .tl-text h3.tl-headline-date {
-  font-family: "trade-gothic-next", sans-serif !important;
-  font-size: 15px;
-  line-height: 15px;
-  font-weight: normal;
+  font-family: "TradeGothicNextLTPro-Lt", sans-serif !important;
+  font-size: 1rem !important;
+  line-height: 2rem !important;
   margin: 0 0 3px 0;
-  color: #b3b3b3;
+  color:#3B3B3F;
 }
 .tl-text .tl-headline-date small,
 .tl-text h3.tl-headline-date small {
-  font-size: 15px;
-  line-height: 15px;
-  font-weight: normal;
-  color: #b3b3b3;
+  font-size: 1rem !important;
+  line-height: 2rem !important;
+  color:#3B3B3F;
 }
 .tl-text .tl-text-date {
   display: inline-block;
-  font-family: "trade-gothic-next", sans-serif !important;
-  font-weight: normal;
+  font-family: "TradeGothicNextLTPro-Lt", sans-serif !important;
   margin-top: 10px;
   font-size: 12px;
-  color: #b3b3b3;
+  color:#3B3B3F;
 }
 .tl-full-image-background .tl-text,
 .tl-full-color-background .tl-text,
 .tl-full-image-background .tl-text p,
 .tl-full-color-background .tl-text p {
-  color: #f2f2f2 !important;
+  color: #3B3B3F !important;
   text-shadow: 1px 1px 2px #000;
+  font-family: "TradeGothicNextLTPro-Lt", sans-serif !important;
 }
 .tl-full-image-background .tl-text .tl-headline-date,
 .tl-full-color-background .tl-text .tl-headline-date,
@@ -2532,7 +2539,7 @@
 .tl-full-color-background .tl-text h3.tl-headline-date,
 .tl-full-image-background .tl-text p h3.tl-headline-date,
 .tl-full-color-background .tl-text p h3.tl-headline-date {
-  color: #f2f2f2 !important;
+  color: #3B3B3F !important;
 }
 .tl-full-image-background .tl-text .tl-headline-date small,
 .tl-full-color-background .tl-text .tl-headline-date small,
@@ -2767,7 +2774,7 @@
 }
 .tl-slide.tl-full-image-background .tl-media .tl-media-wikipedia h4 a,
 .tl-slide.tl-full-color-background .tl-media .tl-media-wikipedia h4 a {
-  color: #FFF !important;
+  color: #3B3B3F !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 .tl-slide.tl-full-image-background .tl-media .tl-media-wikipedia a:hover,
@@ -2840,7 +2847,7 @@
 }
 .tl-slide.tl-full-image-background .tl-media .tl-media-website h4 a,
 .tl-slide.tl-full-color-background .tl-media .tl-media-website h4 a {
-  color: #FFF !important;
+  color: #3B3B3F !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 .tl-slide.tl-full-image-background .tl-media .tl-media-website a:hover,
@@ -2866,8 +2873,8 @@
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  background-color: #FFF;
-  color: #737373;
+  background-color: #3B3B3F;
+  color: #3B3B3F;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -2891,7 +2898,7 @@
   left: 0px;
   font-size: 10px;
   line-height: 10px;
-  font-family: "trade-gothic-next", sans-serif !important;
+  font-family: "TradeGothicNextLTPro-Lt", sans-serif !important;
   background-color: rgba(255, 255, 255, 0.85);
   padding: 3px;
 }
