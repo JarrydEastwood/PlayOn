@@ -73,6 +73,7 @@
   font-family: "thinkMusic" !important; 
   font-style: normal;
   letter-spacing: 1px;
+  color: #FEC66A;
 }
 
 .tl-timeline h1,
@@ -116,6 +117,7 @@
   font-family: "thinkMusic" !important; 
   font-style: normal;
   letter-spacing: 1px;
+  color: #FEC66A;
 }
 .tl-timeline h2 {
   margin-top: 20px;
@@ -1807,7 +1809,6 @@
 ================================================== */
 .tl-slide.tl-full-image-background,
 .tl-slide.tl-full-color-background {
-  color: #3B3B3F !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 .tl-slide.tl-full-image-background p,
@@ -1824,7 +1825,6 @@
 .tl-slide.tl-full-color-background h5,
 .tl-slide.tl-full-image-background h6,
 .tl-slide.tl-full-color-background h6 {
-  color: #3B3B3F !important;
   text-shadow: 1px 1px 1px #000 !important;
 }
 .tl-slide.tl-full-image-background a,
