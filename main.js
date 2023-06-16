@@ -1,184 +1,41 @@
-// Some useful stuff in here that could clean up the tiles
+var span = document.querySelector(".typewriter span");
+var textArr = span.getAttribute("data-text").split(", "); 
+var maxTextIndex = textArr.length; 
 
-// Listen for Click -----------------------------------------------------------
+var sPerChar = 0.15; 
+var sBetweenWord = 1.5;
+var textIndex = 0; 
 
-// document.addEventListener("click", (e) =>{
-//     if(e.target.classList.contains("slider-prev")){
-//         togglePrevious();
-//         togglePreviousDesc();
-//         updatePrev();
-//     }
-//     else if(e.target.classList.contains("slider-next")){
-//         toggleNext();
-//         toggleNextDesc();
-//         updateNext();
-//     }
-// })
+typing(textIndex, textArr[textIndex]); 
 
+function typing(textIndex, text) {
+    var charIndex = 0; 
+    var maxCharIndex = text.length - 1; 
+    
+    var typeInterval = setInterval(function () {
+        span.innerHTML += text[charIndex]; 
+        if (charIndex == maxCharIndex) {
+            clearInterval(typeInterval);
+            setTimeout(function() { deleting(textIndex, text) }, sBetweenWord * 1000); 
+            
+        } else {
+            charIndex += 1; 
+        }
+    }, sPerChar * 1000); 
+}
 
+function deleting(textIndex, text) {
+    var minCharIndex = 0; 
+    var charIndex = text.length - 1; 
 
-// // Rotate the Course Title -----------------------------------------------------------
-
-// function togglePrevious(){
-//     const currentActive = document.querySelector("h3.active");
-//     const currentIndex = parseInt(currentActive.dataset.index);
-//     //console.log(currentIndex);
-
-//     if(currentIndex - 1 >= 0){
-//         const previousChild = document.querySelector(`[data-index="${currentIndex-1}"]`);
-//         //console.log(previousChild)
-//         currentActive.classList.remove("active");
-//         previousChild.classList.add("active");
-//     }
-//     else{
-//         const previousChild = document.querySelector(`[data-index="${4}"]`);
-//         //console.log(previousChild)
-//         currentActive.classList.remove("active");
-//         previousChild.classList.add("active");
-//     }
-// }
-
-
-// function toggleNext(){
-//     const currentActive = document.querySelector("h3.active");
-//     const currentIndex = parseInt(currentActive.dataset.index);
-//     //console.log(currentIndex);
-
-//     if(currentIndex + 1 <= 4){
-//         const nextChild = document.querySelector(`[data-index="${currentIndex+1}"]`);
-//         //console.log(nextChild)
-//         currentActive.classList.remove("active");
-//         nextChild.classList.add("active");
-//     }
-//     else{
-//         const nextChild = document.querySelector(`[data-index="${0}"]`);
-//         //console.log(nextChild)
-//         currentActive.classList.remove("active");
-//         nextChild.classList.add("active");
-//     }
-// }
-
-
-
-// // Rotate the Course Description -----------------------------------------------------------
-
-// function togglePreviousDesc(){
-//   const currentActive = document.querySelector("h2.active");
-//   const currentIndex = parseInt(currentActive.dataset.index);
-//   //console.log(currentIndex);
-
-//   if(currentIndex - 1 >= 10){
-//       const previousChild = document.querySelector(`[data-index="${currentIndex-1}"]`);
-//       //console.log(previousChild)
-//       currentActive.classList.remove("active");
-//       previousChild.classList.add("active");
-//   }
-//   else{
-//       const previousChild = document.querySelector(`[data-index="${14}"]`);
-//       //console.log(previousChild)
-//       currentActive.classList.remove("active");
-//       previousChild.classList.add("active");
-//   }
-// }
-
-
-// function toggleNextDesc(){
-//   const currentActive = document.querySelector("h2.active");
-//   const currentIndex = parseInt(currentActive.dataset.index);
-//   //console.log(currentIndex);
-
-//   if(currentIndex + 1 <= 14){
-//       const nextChild = document.querySelector(`[data-index="${currentIndex+1}"]`);
-//       //console.log(nextChild)
-//       currentActive.classList.remove("active");
-//       nextChild.classList.add("active");
-//   }
-//   else{
-//       const nextChild = document.querySelector(`[data-index="${10}"]`);
-//       //console.log(nextChild)
-//       currentActive.classList.remove("active");
-//       nextChild.classList.add("active");
-//   }
-// }
-
-
-
-// // Rotate the Course Images -----------------------------------------------------------
-
-// function updateNext() {
-//     // Set the position of each item based on the current index
-//     const items = document.querySelectorAll('.item');
-//     items.forEach((item) => {
-//       let position = parseInt(item.style.order);
-//       console.log(position);
-//       if (position + 1 <= 4){
-//         position ++;
-//         item.style.order = position;
-//         console.log(position);
-//       } else {
-//         item.style.order = 0;
-//         console.log(position);
-//       }
-
-      
-//     });
-//     // Apply styles based on the position of each item
-//     items.forEach((item) => {
-//         let position2 = parseInt(item.style.order);
-//       if (position2 == 0) {
-//         item.classList.add('small1');
-//         item.classList.remove('small2');
-//       } else if (position2 == 1) {
-//         item.classList.add('big1');
-//         item.classList.remove('small1');
-//       } else if (position2 == 2) {
-//         item.classList.add('focus');
-//         item.classList.remove('big1');
-//       } else if (position2 == 3) {
-//         item.classList.add('big2');
-//         item.classList.remove('focus');
-//       } else if (position2 == 4) {
-//         item.classList.add('small2');
-//         item.classList.remove('big2');
-//       }
-//     });
-//   }
-
-//   function updatePrev() {
-//     // Set the position of each item based on the current index
-//     const items = document.querySelectorAll('.item');
-//     items.forEach((item) => {
-//       let position = parseInt(item.style.order);
-//       console.log(position);
-//       if (position - 1 >= 0){
-//         position --;
-//         item.style.order = position;
-//         console.log(position);
-//       } else {
-//         item.style.order = 4;
-//         console.log(position);
-//       }
-
-      
-//     });
-//     // Apply styles based on the position of each item
-//     items.forEach((item) => {
-//         let position2 = parseInt(item.style.order);
-//       if (position2 == 0) {
-//         item.classList.add('small1');
-//         item.classList.remove('big1');
-//       } else if (position2 == 1) {
-//         item.classList.add('big1');
-//         item.classList.remove('focus');
-//       } else if (position2 == 2) {
-//         item.classList.add('focus');
-//         item.classList.remove('big2');
-//       } else if (position2 == 3) {
-//         item.classList.add('big2');
-//         item.classList.remove('small2');
-//       } else if (position2 == 4) {
-//         item.classList.add('small2');
-//         item.classList.remove('small1');
-//       }
-//     });
-//   }
+    var typeInterval = setInterval(function () {
+        span.innerHTML = text.substr(0, charIndex); 
+        if (charIndex == minCharIndex) {
+            clearInterval(typeInterval);
+            textIndex + 1 == maxTextIndex ? textIndex = 0 : textIndex += 1; 
+            setTimeout(function() { typing(textIndex, textArr[textIndex]) }, sBetweenWord * 1000); 
+        } else {
+            charIndex -= 1; 
+        }
+    }, sPerChar * 1000); 
+}

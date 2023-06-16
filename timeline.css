@@ -60,7 +60,7 @@
 	Snippets of reusable CSS to develop faster and keep code readable
  * ----------------------------------------------------------------- */
 .tl-timeline {
-  font-family: "TradeGothicNextLTPro-Lt" !important;
+  font-family: "TradeGothicNextLTPro-Lt";
   /* VCard
 	================================================== */
 }
@@ -70,10 +70,10 @@
 .tl-timeline h4,
 .tl-timeline h5,
 .tl-timeline h6 {
-  font-family: "thinkMusic" !important; 
+  font-family: "thinkMusic";
   font-style: normal;
   letter-spacing: 1px;
-  color: #FEC66A;
+  color: #3B3B3F;
 }
 
 .tl-timeline h1,
@@ -102,22 +102,22 @@
   line-height: 15px;
 }
 .tl-timeline h2.tl-headline-title {
-  font-family: "trade-gothic-next-heavy", sans-serif !important;
+  font-family: "thinkMusic" !important;
   font-style: normal;
   letter-spacing: 1px;
   font-size: 2.5rem !important;
   line-height: 3rem !important;
-  color: #FEC66A;
+  color: #3B3B3F;
 }
 .tl-timeline h2.tl-headline-title small {
   display: block;
   margin-top: 5px;
   font-size: 2rem !important;
   line-height: 2rem !important;
-  font-family: "thinkMusic" !important; 
+
   font-style: normal;
   letter-spacing: 1px;
-  color: #FEC66A;
+  color: #3B3B3F;
 }
 .tl-timeline h2 {
   margin-top: 20px;
@@ -191,7 +191,7 @@
 }
 .tl-timeline blockquote,
 .tl-timeline blockquote p {
-  font-family: "TradeGothicNextLTPro-Lt", sans-serif !important;
+  font-family: "TradeGothicNextLTPro-Lt", sans-serif ;
   color: #4800ff;
   font-size: 24px;
   line-height: 24px;
@@ -202,7 +202,7 @@
 }
 .tl-timeline blockquote cite,
 .tl-timeline blockquote p cite {
-  font-family: "TradeGothicNextLTPro-Lt", sans-serif !important;
+  font-family: "TradeGothicNextLTPro-Lt", sans-serif;
   font-size: 11px;
   color: #666666;
   display: block;
@@ -236,7 +236,7 @@
   margin: 0;
 }
 .tl-timeline .vcard {
-  font-family: "TradeGothicNextLTPro-Lt", sans-serif !important;
+  font-family: "TradeGothicNextLTPro-Lt", sans-serif;
   font-size: 15px;
   line-height: 15px;
   margin-bottom: 15px;
@@ -316,7 +316,7 @@
 }
 .tl-timeline .tl-note {
   display: block;
-  font-family: "TradeGothicNextLTPro-Lt", sans-serif !important;
+  font-family: "TradeGothicNextLTPro-Lt", sans-serif;
   font-style: italic;
   background-color: #fcf8e3;
   font-size: 15px;
@@ -676,7 +676,7 @@
 }
 .tl-mobile .tl-menubar-button:active {
   background: #c34528;
-  color: #3B3B3F;
+  color: #FFF;
 }
 @keyframes invertToBlack {
   from {
@@ -1076,8 +1076,8 @@
 .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline,
 .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline p {
   display: -webkit-box;
-  line-clamp: 2;
-  -webkit-line-clamp: 2;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
   box-orient: vertical;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
@@ -1088,6 +1088,7 @@
   margin: 0;
   color: #FFF;
   position: relative;
+  font-family: "TradeGothicNextLTPro-Lt", sans-serif;
 }
 .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline.tl-headline-fadeout:after,
 .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline p.tl-headline-fadeout:after {
@@ -1266,13 +1267,13 @@
 }
 .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
   background-color: #3B3B3F;
-  color: #333;
+  color: #FFF;
   z-index: 9;
   border-color: rgba(51, 51, 51, 0.5);
   box-shadow: 1px 1px 3px rgba(145, 145, 145, 0.5);
 }
 .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline {
-  color: #333;
+  color: #FFF;
 }
 .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline.tl-headline-fadeout:after {
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #FFF 80%);
@@ -1295,7 +1296,7 @@
 }
 .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container [class^="tl-icon-"],
 .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container [class*=" tl-icon-"] {
-  color: #333;
+  color: #FFF;
 }
 .tl-timemarker.tl-timemarker-with-end .tl-timemarker-timespan .tl-timemarker-timespan-content {
   display: block;
@@ -2079,7 +2080,7 @@
 .tl-slidenav-previous .tl-slidenav-content-container .tl-slidenav-description,
 .tl-slidenav-next .tl-slidenav-content-container .tl-slidenav-description {
   text-shadow: 1px 1px 1px #FFF;
-  color: #FEC66A;
+  color: #3B3B3F;
 }
 .tl-slidenav-previous .tl-slidenav-content-container.tl-slidenav-inverted .tl-slidenav-icon,
 .tl-slidenav-next .tl-slidenav-content-container.tl-slidenav-inverted .tl-slidenav-icon,
@@ -2877,7 +2878,7 @@
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  background-color: #3B3B3F;
+  background-color: #3f3b3f;
   color: #3B3B3F;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -2902,7 +2903,7 @@
   left: 0px;
   font-size: 10px;
   line-height: 10px;
-  font-family: "TradeGothicNextLTPro-Lt", sans-serif !important;
+  font-family: "TradeGothicNextLTPro-Lt", sans-serif;
   background-color: rgba(255, 255, 255, 0.85);
   padding: 3px;
 }

@@ -1,3 +1,70 @@
+.fancyUnderline {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(
+      to top,
+      #FEC66A 0%,
+      #FEC66A 10%,
+      transparent 10.01%
+    )
+    no-repeat left bottom / 0 100%;
+  transition: background-size 0.5s;
+}
+.fancyUnderline:hover {
+  background-size: 100% 100%;
+  color: #FEC66A;
+  border-color: #FEC66A;
+}
+
+.fancyUnderline .leftArrow span {
+  transition: padding-right 0.5s;
+}
+
+.fancyUnderline:hover .leftArrow span {
+  background-size: 100% 100%;
+  color: #FEC66A;
+  border-color: #FEC66A;
+  padding-right: 8px;
+}
+
+
+
+
+.container {
+  min-width: 400px;
+  align-items: center;
+  box-sizing: border-box;
+  background: var(--bg-color);
+  padding: 40px;
+}
+
+.typewriter {
+  position: relative;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.typewriter span {
+  color: var(--text-color);
+  padding: 10px;
+  border-right: solid var(--text-color) 10px; 
+  animation: cursor 1s ease-in-out infinite;
+}
+
+@keyframes cursor {
+  from { border-color: var(--text-color); }
+  to { border-color: transparent; }
+}
+
+@media (max-width: 576px) {
+  .typewriter { font-size: 24px; }
+}
+@media (max-width: 768px) {
+  .typewriter { font-size: 36px; }
+}
+
+
 @font-face {
   font-family: thinkMusic;
   src: url(src/ThinkMusic.woff2);
@@ -76,6 +143,7 @@ color: #59595B;
   font-weight: 800;
   font-style: normal;
   letter-spacing: 1px;
+  text-shadow: #59595B 0px 0px 10px;
 }
 .secondaryTitle{
   font-family: "trade-gothic-next", sans-serif;

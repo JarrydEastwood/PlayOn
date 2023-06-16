@@ -13,16 +13,30 @@
     </head>
 
     <body class="relative h-screen w-screen bgDarkGrey overflow-hidden">
-        <div class="my-12 mx-auto">
 
+        <div class="title relative flex" >
+            <a href="#event-womens-football-clubs-br-in-canberra"><button class="title fancyUnderline z-30 absolute ml-4 mt-8 w-32 md:w-2/12 text-white border-white border-2 border-solid px-4 py-2 rounded-lg">
+                <img src="src/Assets/arrow.png" class="relative inline-flex rounded-full h-4 w-auto mr-4 rotate-180 my-auto">
+            <span class="text-sm lg:text-lg hidden lg:inline-flex">Back to start</span> <span class="text-sm lg:text-lg inline-flex lg:hidden">Start</span>
+            </button></a>
+
+            <a class="" href="#event-canberra-kangaroos-club"> <button class="title fancyUnderline z-30  absolute right-4 mt-8 w-32 md:w-2/12 text-white border-white border-2 border-solid px-4 py-2 rounded-lg">
+            <span class="text-sm lg:text-lg hidden lg:inline-flex">Jump to end</span> <span class="text-sm inline-flex lg:text-lg lg:hidden">End</span>
+                <img src="src/Assets/arrow.png" class="relative inline-flex rounded-full h-4 w-auto ml-4 my-auto">
+            </button></a>
+        </div>
+
+        <div class="my-10 w-1/2 mx-auto">
+            <p class="title text-2xl xl:text-4xl mt-4 text-center yellow">Women's Football Clubs</p>
+            <p class="subtitle text-md xl:text-xl mt-4 text-center yellow">Canberra's WFC History</p>
+        </div>
+
+        <div class="bottom-0 mx-auto">
             <section class="">
-                
                 <!-- Calling Timeline  -->
-                    <div id='timeline-embed' style="width: 100%; height: 600px;"></div>
-                    
-        
- 
+                <div id='timeline-embed' style="width: 100%; height: 600px;"></div>
             </section>
+            <p class="text-white text-center pt-4">Did we miss someone? Let us know: <br> <b class="underline tracking-wide">FAD.Student@Canberra.edu.au</b></p>
         </div>
 
     </body> 
@@ -30,21 +44,18 @@
 
 
 
-
 <script type="text/javascript">
 
 
  var additionalOptions = {
-
-    start_at_end: false,
     
     timenav_height: 175,
 
     timenav_position: "bottom",
 
-    default_bg_color: "#FFF",
-
-    hash_bookmark: false,
+    optimal_tick_width: 200,
+    
+    hash_bookmark: true,
   }
 
  // Link to GoogleDocs file for timeline
