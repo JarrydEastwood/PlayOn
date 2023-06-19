@@ -427,9 +427,7 @@
 .tl-icon-storify:after {
   content: "\e62e";
 }
-.tl-icon-image-v2:after {
-  content: "\e62f";
-}
+
 .tl-icon-quote-v2:after {
   content: "\e630";
 }
@@ -505,9 +503,7 @@
 .tl-icon-dribbble:after {
   content: "\e643";
 }
-.tl-icon-image:after {
-  content: "\e605";
-}
+
 .tl-icon-vimeo:after {
   content: "\e606";
 }

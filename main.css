@@ -3,17 +3,35 @@
   text-decoration: none;
   background: linear-gradient(
       to top,
-      #FEC66A 0%,
-      #FEC66A 10%,
+      #FFF 0%,
+      #FFF 10%,
+      transparent 10.01%
+    )
+    no-repeat right bottom / 0 100%;
+  transition: background-size 0.5s;
+}
+.fancyUnderline:hover {
+  background-size: 100% 100%;
+  color: #FFF;
+  border-color: #FFF;
+}
+
+.fancyUnderlineLeft {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(
+      to top,
+      #FFF 0%,
+      #FFF 10%,
       transparent 10.01%
     )
     no-repeat left bottom / 0 100%;
   transition: background-size 0.5s;
 }
-.fancyUnderline:hover {
+.fancyUnderlineLeft:hover {
   background-size: 100% 100%;
-  color: #FEC66A;
-  border-color: #FEC66A;
+  color: #FFF;
+  border-color: #FFF;
 }
 
 .fancyUnderline .leftArrow span {
@@ -22,8 +40,8 @@
 
 .fancyUnderline:hover .leftArrow span {
   background-size: 100% 100%;
-  color: #FEC66A;
-  border-color: #FEC66A;
+  color: #FFF;
+  border-color: #FFF;
   padding-right: 8px;
 }
 
