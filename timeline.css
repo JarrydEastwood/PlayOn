@@ -70,7 +70,7 @@
 .tl-timeline h4,
 .tl-timeline h5,
 .tl-timeline h6 {
-  font-family: "thinkMusic";
+  font-family: "trade-gothic-next-heavy";
   font-style: normal;
   letter-spacing: 1px;
   color: #3B3B3F;
@@ -102,7 +102,7 @@
   line-height: 15px;
 }
 .tl-timeline h2.tl-headline-title {
-  font-family: "thinkMusic" !important;
+  font-family: "trade-gothic-next-heavy" !important;
   font-style: normal;
   letter-spacing: 1px;
   font-size: 2.5rem !important;
