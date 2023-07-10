@@ -2343,13 +2343,16 @@
   margin-top: auto;
   margin-bottom: auto;
   position: relative;
+  pointer-events: none;
 }
 .tl-media .tl-media-content-container.tl-media-content-container-text {
   border-right: 1px solid #e6e6e6;
   padding-right: 20px;
+  pointer-events: none;
 }
 .tl-media .tl-media-content-container .tl-media-content {
   position: relative;
+  pointer-events: none;
 }
 .tl-media .tl-media-content-container .tl-media-content:before,
 .tl-media .tl-media-content-container .tl-media-content:after {
@@ -2827,6 +2830,7 @@
   max-width: 120px;
   max-height: 120px;
   margin: 4px 0 0 15px;
+  pointer-events: none;
 }
 .tl-media .tl-media-content-container .tl-media-content .tl-media-website img.tl-media-website-icon {
   max-width: 16px;
