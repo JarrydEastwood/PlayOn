@@ -2100,13 +2100,13 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 32px;
+  font-size: 64px;
   margin-bottom: 5px;
 }
 .tl-slidenav-next {
   text-align: right;
   margin-right: 10px;
-  right: 100px;
+  right: 125px;
 }
 .tl-slidenav-next .tl-slidenav-title,
 .tl-slidenav-next .tl-slidenav-description {
@@ -2120,7 +2120,7 @@
 }
 .tl-slidenav-previous {
   text-align: left;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 .tl-slidenav-previous .tl-slidenav-icon {
   margin-left: 0px;
